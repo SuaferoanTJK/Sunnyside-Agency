@@ -26,6 +26,9 @@
         color: v.$darkDesaturatedCyan;
         text-decoration: none;
         font-size: 2rem;
+        &:hover{
+            color: v.$white;
+        }
     }
     &__social{
         margin: 0 auto;
@@ -37,6 +40,9 @@
             img{
                 height: 3rem;
                 filter: invert(35%) sepia(60%) saturate(300%) hue-rotate(100deg) brightness(50%) contrast(110%);
+                &:hover{
+                    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+                }
             }
         }
     }

@@ -86,9 +86,15 @@
         }
         &--1{
             @include m.btn(lighten(v.$yellow,12%));
+            &:hover{
+                @include m.btn(v.$yellow);
+            }
         }
         &--2{
             @include m.btn(v.$softRed);
+            &:hover{
+                @include m.btn(darken(v.$softRed,20%));
+            }
         }
     }
 }
