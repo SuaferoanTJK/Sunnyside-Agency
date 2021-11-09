@@ -1,0 +1,67 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    min-height: 50rem;
+    padding: 5rem 0;
+    @include m.bg("../img/mobile/image-header.jpg");
+    background-position: bottom center;
+    @include m.tablet{
+        @include m.bg("../img/desktop/image-header.jpg");
+    }
+    &__navbar{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        width: 15rem;
+    }
+    &__btn{
+        background-color: transparent;
+        border: 0;
+        @include m.tablet{
+            display: none;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.hero{
+    &__heading{
+        text-align: center;
+        font-family: v.$fuenteSecundaria;
+        text-transform: uppercase;
+        color: v.$white;
+        font-size: 5rem;
+        padding: 10rem 0;
+        @include m.tablet{
+            padding: 12rem 0 29.9rem 0;
+        }
+        span{
+            display: block;
+            @include m.tablet{
+                display: inline-block;
+            }
+        }
+        &::after{
+            content:"";
+            display: block;
+            justify-content: center;
+            width: 4rem;
+            height: auto;
+            background-image: url("../img/icon-arrow-down.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            padding-top: 25rem;
+            transition-property: transform;
+            transition-duration: .3s;
+            @include m.tablet{
+                padding-top: 30rem;
+            } 
+        }
+    }
+}

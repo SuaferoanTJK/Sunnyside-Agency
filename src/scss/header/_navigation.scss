@@ -1,0 +1,49 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.navigation{
+    display: none;
+    align-items: center;
+    gap: 3rem;
+    &.show{
+        @include m.mobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: absolute;
+            top: 6rem;
+            left: 1%;
+            width: 98%;
+            margin: 0 auto;
+            padding: 4rem 3rem;
+            min-height: 40rem;
+            background-color: v.$white;
+        }   
+    }
+    @include m.tablet{
+        display: flex;
+        flex-direction: row;
+    }
+    &__link{
+        color: v.$veryDarkGrayishBlue;
+        text-decoration: none;
+        font-weight: 400;
+        font-family: v.$fuenteSecundaria;
+        font-size: 2.1rem;
+        @include m.tablet{
+            color: v.$white;
+            font-size: unset;
+        }
+        &--submit{
+            background-color: v.$yellow;
+            padding: 2rem 3rem;
+            text-transform: uppercase;
+            border-radius: 4rem;
+            font-weight: 700;
+            @include m.tablet{
+                background-color: v.$white;
+                color: v.$veryDarkDesaturatedBlue;
+            }
+        }
+    }
+}

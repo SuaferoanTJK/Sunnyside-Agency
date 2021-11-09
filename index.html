@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon-32x32.png">
+  <link rel="stylesheet" href="build/css/app.css">
+  <title>Frontend Mentor | Sunnyside Agency Landing Page</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__navbar container">
+      <img class="header__logo" src="build/img/logo.svg" alt="Sunnyside Logo">
+      <button class="header__btn" id="btn-Hamburger">
+        <img src="build/img/icon-hamburger.svg" alt="Hamburguer Button">
+      </button>
+      <nav class="navigation">
+        <a class="navigation__link" href="#">About</a>
+        <a class="navigation__link" href="#">Services</a>
+        <a class="navigation__link" href="#">Projects</a>
+        <a class="navigation__link navigation__link--submit" href="#">Contact</a>
+      </nav>
+    </div>
+    <div class="hero container">
+      <h1 class="hero__heading">We are <span>creatives</span></h1>
+    </div>
+  </header>
+  
+  <main class="topics">
+    <div class="topics__grid">
+      <div class="topic"></div>
+      <div class="topic">
+        <div class="topic__info">
+          <h2 class="topic__heading">Transform your brand</h2>
+          <p class="topic__text">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a class="topic__link topic__link--1" href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="topic"></div>
+      <div class="topic">
+        <div class="topic__info">
+          <h2 class="topic__heading">Stand out to the right audience</h2>
+          <p class="topic__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <a class="topic__link topic__link--2" href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="jobs">
+    <div class="jobs__grid">
+      <div class="job">
+        <div class="job__info">
+          <h2 class="job__heading">Graphic design</h2>
+          <p class="job__text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="job__info">
+          <h2 class="job__heading">Photography</h2>
+          <p class="job__text">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="testimonials__heading">Client testimonials</h2>
+      <div class="testimonials__grid">
+        <div class="testimonial">
+          <div class="testimonial__image">
+            <img src="build/img/image-emily.jpg" alt="Testimonial Client">
+          </div>
+          <div class="testimonial__info">
+            <p class="testimonial__quote">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <div class="testimonial__quote-ref">
+              <p class="testimonial__author">Emily R.</p>
+              <p class="testimonial__job">Marketing Director</p>
+            </div>
+          </div>
+        </div> <!-- Testimonial -->
+        <div class="testimonial">
+          <div class="testimonial__image">
+            <img src="build/img/image-thomas.jpg" alt="Testimonial Client">
+          </div>
+          <div class="testimonial__info">
+            <p class="testimonial__quote">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+            <div class="testimonial__quote-ref">
+              <p class="testimonial__author">Thomas S.</p>
+              <p class="testimonial__job">Chief Operating Officer</p>
+            </div>
+          </div>
+        </div> <!-- Testimonial -->
+        <div class="testimonial">
+          <div class="testimonial__image">
+            <img src="build/img/image-jennie.jpg" alt="Testimonial Client">
+          </div>
+          <div class="testimonial__info">
+            <p class="testimonial__quote">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <div class="testimonial__quote-ref">
+              <p class="testimonial__author">Jennie F.</p>
+              <p class="testimonial__job">Business Owner</p>
+            </div>
+          </div>
+        </div> <!-- Testimonial -->
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="gallery__grid">
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <img class="footer__logo" src="build/img/logo.svg" alt="Sunnyside Logo Footer">
+      <nav class="footer__navigation">
+        <a href="#" class="footer__link">About</a>
+        <a href="#" class="footer__link">Services</a>
+        <a href="#" class="footer__link">Projects</a>
+        <a href="#" class="footer__link">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link">
+          <img src="build/img/icon-facebook.svg" alt="Facebook">
+        </a>
+        <a href="#" class="footer__social-link">
+          <img src="build/img/icon-instagram.svg" alt="Facebook">
+        </a>
+        <a href="#" class="footer__social-link">
+          <img src="build/img/icon-twitter.svg" alt="Facebook">
+        </a>
+        <a href="#" class="footer__social-link">
+          <img src="build/img/icon-pinterest.svg" alt="Pinterest">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="build/js/app.js"></script>
+</body>
+</html>

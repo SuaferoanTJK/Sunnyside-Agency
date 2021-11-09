@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    background-color: v.$darkModerateCyan;
+    padding-top: 5rem;
+    &__logo{
+        filter: invert(75%) sepia(70%) saturate(300%) hue-rotate(100deg) brightness(70%) contrast(100%);
+        width: 30%;
+        margin: 0 auto;
+        @include m.tablet{
+            width: 20%;   
+        }
+    }
+    &__navigation{
+        display: flex;
+        justify-content: space-between;
+        max-width: 31rem;
+        margin: 0 auto;
+        padding: 3rem 0;
+        @include m.tablet{
+            max-width: 40rem;
+        }
+    }
+    &__link{
+        color: v.$darkDesaturatedCyan;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    &__social{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 8rem 0;
+        max-width: 20rem;
+        &-link{
+            img{
+                height: 3rem;
+                filter: invert(35%) sepia(60%) saturate(300%) hue-rotate(100deg) brightness(50%) contrast(110%);
+            }
+        }
+    }
+}

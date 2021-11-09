@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.gallery{
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        @include m.tablet{
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+    
+}
+.picture{
+    aspect-ratio: 1/1;
+    background-position: bottom center;
+    &:nth-child(1){
+        @include m.bg("../img/mobile/image-gallery-milkbottles.jpg");
+        @include m.tablet{
+            @include m.bg("../img/desktop/image-gallery-milkbottles.jpg");
+        }
+    }
+    &:nth-child(2){
+        @include m.bg("../img/mobile/image-gallery-orange.jpg");
+        @include m.tablet{
+            @include m.bg("../img/desktop/image-gallery-orange.jpg");
+        }
+    }
+    &:nth-child(3){
+        @include m.bg("../img/mobile/image-gallery-cone.jpg");
+        @include m.tablet{
+            @include m.bg("../img/desktop/image-gallery-cone.jpg");
+        }
+    }
+    &:nth-child(4){
+        @include m.bg("../img/mobile/image-gallery-sugar-cubes.jpg");
+        @include m.tablet{
+            @include m.bg("../img/desktop/image-gallery-sugarcubes.jpg");
+        }
+    }
+}

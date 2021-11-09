@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.jobs{
+    @include m.tablet{
+        &__grid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 0;
+        }    
+    }
+}
+.job{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &:nth-child(1){
+        @include m.bg("../img/mobile/image-graphic-design.jpg");
+        background-position: center center;
+        color: v.$darkDesaturatedCyan;
+        @include m.tablet{
+            @include m.bg("../img/desktop/image-graphic-design.jpg");
+        }
+    }
+    &:nth-child(2){
+        @include m.bg("../img/mobile/image-photography.jpg");
+        background-position: center center;
+        color: v.$darkBlue;
+        @include m.tablet{
+            @include m.bg("../img/desktop/image-photography.jpg");
+        }
+    }
+    &__info{
+        padding-top: 43rem;
+        padding-bottom: 7rem;
+        @include m.tablet{
+            max-width: 40rem;
+            margin: 0 auto;
+        }
+    }
+    &__heading{
+        font-family: v.$fuenteSecundaria;
+        font-weight: 900;
+        @include m.tablet{
+            font-size: 3rem;
+        }
+    }
+    &__text{
+        font-size: 1.5rem;
+        @include m.tablet{
+            font-size: 1.7rem;
+        }
+    }
+}
